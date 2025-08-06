@@ -1,0 +1,281 @@
+{
+  "timestamp": "2025-08-06T20:29:59.903Z",
+  "summary": {
+    "total": 45,
+    "passed": 24,
+    "failed": 21,
+    "successRate": "53.33%"
+  },
+  "details": [
+    {
+      "test": "Environment file .env.local",
+      "passed": true,
+      "details": "File exists",
+      "timestamp": "2025-08-06T20:29:30.752Z"
+    },
+    {
+      "test": "Environment Variables Loading",
+      "passed": true,
+      "details": "Tested through health endpoint response",
+      "timestamp": "2025-08-06T20:29:30.771Z"
+    },
+    {
+      "test": "API GET /api/health",
+      "passed": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-08-06T20:29:30.782Z"
+    },
+    {
+      "test": "API GET /api/auth/test-user",
+      "passed": false,
+      "details": "Status: 405, Expected: 200",
+      "timestamp": "2025-08-06T20:29:31.008Z"
+    },
+    {
+      "test": "API GET /api/leads",
+      "passed": false,
+      "details": "Status: 401, Expected: 200",
+      "timestamp": "2025-08-06T20:29:31.285Z"
+    },
+    {
+      "test": "API GET /api/orders",
+      "passed": false,
+      "details": "Status: 401, Expected: 200",
+      "timestamp": "2025-08-06T20:29:31.505Z"
+    },
+    {
+      "test": "API GET /api/health",
+      "passed": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-08-06T20:29:31.519Z"
+    },
+    {
+      "test": "API GET /api/leads",
+      "passed": false,
+      "details": "Status: 401, Expected: 200",
+      "timestamp": "2025-08-06T20:29:31.533Z"
+    },
+    {
+      "test": "Database Connectivity",
+      "passed": false,
+      "details": "Tested through health and leads endpoints",
+      "timestamp": "2025-08-06T20:29:31.533Z"
+    },
+    {
+      "test": "API POST /api/auth/register",
+      "passed": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2025-08-06T20:29:32.052Z"
+    },
+    {
+      "test": "API POST /api/auth/login",
+      "passed": false,
+      "details": "Status: 400, Expected: 200",
+      "timestamp": "2025-08-06T20:29:32.616Z"
+    },
+    {
+      "test": "API GET /api/whatsapp/login",
+      "passed": false,
+      "details": "Status: 401, Expected: 200",
+      "timestamp": "2025-08-06T20:29:35.153Z"
+    },
+    {
+      "test": "API POST /api/whatsapp/send",
+      "passed": false,
+      "details": "Status: 401, Expected: 200",
+      "timestamp": "2025-08-06T20:29:35.634Z"
+    },
+    {
+      "test": "API POST /api/whatsapp/bulk",
+      "passed": false,
+      "details": "Status: 401, Expected: 200",
+      "timestamp": "2025-08-06T20:29:36.012Z"
+    },
+    {
+      "test": "API GET /api/ai-engine",
+      "passed": false,
+      "details": "Status: 401, Expected: 200",
+      "timestamp": "2025-08-06T20:29:36.694Z"
+    },
+    {
+      "test": "API GET /api/ai-engine/models",
+      "passed": false,
+      "details": "Status: 401, Expected: 200",
+      "timestamp": "2025-08-06T20:29:37.007Z"
+    },
+    {
+      "test": "API POST /api/ai-engine/chat",
+      "passed": false,
+      "details": "Status: 400, Expected: 200",
+      "timestamp": "2025-08-06T20:29:37.698Z"
+    },
+    {
+      "test": "API POST /api/elevenlabs",
+      "passed": false,
+      "details": "Status: 400, Expected: 200",
+      "timestamp": "2025-08-06T20:29:38.070Z"
+    },
+    {
+      "test": "API POST /api/voice-assistant",
+      "passed": false,
+      "details": "Status: 400, Expected: 200",
+      "timestamp": "2025-08-06T20:29:38.384Z"
+    },
+    {
+      "test": "API POST /api/whisper",
+      "passed": false,
+      "details": "Status: 500, Expected: 200",
+      "timestamp": "2025-08-06T20:29:38.818Z"
+    },
+    {
+      "test": "API GET /api/ai-inventory",
+      "passed": false,
+      "details": "Status: 401, Expected: 200",
+      "timestamp": "2025-08-06T20:29:39.164Z"
+    },
+    {
+      "test": "API GET /api/ai-reminders",
+      "passed": false,
+      "details": "Status: 401, Expected: 200",
+      "timestamp": "2025-08-06T20:29:39.502Z"
+    },
+    {
+      "test": "API GET /api/ai-payment",
+      "passed": false,
+      "details": "Status: 401, Expected: 200",
+      "timestamp": "2025-08-06T20:29:39.902Z"
+    },
+    {
+      "test": "API POST /api/payment/upi",
+      "passed": false,
+      "details": "Status: 401, Expected: 200",
+      "timestamp": "2025-08-06T20:29:41.284Z"
+    },
+    {
+      "test": "API GET /api/virtual-mic",
+      "passed": false,
+      "details": "Status: 401, Expected: 200",
+      "timestamp": "2025-08-06T20:29:41.691Z"
+    },
+    {
+      "test": "API GET /api/realtime-voice",
+      "passed": false,
+      "details": "Status: 400, Expected: 200",
+      "timestamp": "2025-08-06T20:29:42.097Z"
+    },
+    {
+      "test": "Page /",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-08-06T20:29:43.987Z"
+    },
+    {
+      "test": "Page /login/customer",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-08-06T20:29:44.562Z"
+    },
+    {
+      "test": "Page /login/admin",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-08-06T20:29:45.112Z"
+    },
+    {
+      "test": "Page /customer",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-08-06T20:29:46.252Z"
+    },
+    {
+      "test": "Page /customer/whatsapp",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-08-06T20:29:46.791Z"
+    },
+    {
+      "test": "Page /customer/ai-brain",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-08-06T20:29:48.541Z"
+    },
+    {
+      "test": "Page /customer/ai-engine",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-08-06T20:29:49.521Z"
+    },
+    {
+      "test": "Page /customer/leads",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-08-06T20:29:50.193Z"
+    },
+    {
+      "test": "Page /customer/orders",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-08-06T20:29:50.904Z"
+    },
+    {
+      "test": "Page /customer/inventory",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-08-06T20:29:51.817Z"
+    },
+    {
+      "test": "Page /customer/crm",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-08-06T20:29:52.671Z"
+    },
+    {
+      "test": "Page /customer/bulk-messages",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-08-06T20:29:53.554Z"
+    },
+    {
+      "test": "Page /customer/ai-inventory",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-08-06T20:29:54.416Z"
+    },
+    {
+      "test": "Page /customer/ai-reminders",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-08-06T20:29:55.568Z"
+    },
+    {
+      "test": "Page /customer/ai-payments",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-08-06T20:29:56.443Z"
+    },
+    {
+      "test": "Page /customer/virtual-mic",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-08-06T20:29:57.221Z"
+    },
+    {
+      "test": "Page /customer/payment-certificates",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-08-06T20:29:58.042Z"
+    },
+    {
+      "test": "Page /customer/upi-payments",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-08-06T20:29:58.955Z"
+    },
+    {
+      "test": "Page /voice-demo",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-08-06T20:29:59.903Z"
+    }
+  ]
+}
